@@ -3,10 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>지에이코리아 스마트FC</title>
-<meta name="description" content="30개 보험사 상품을 비교 설계하는 지에이코리아 스마트FC. 초기비용 없이 본업과 함께 시작하세요.">
+<title>지에이코리아 더존 스마트FC</title>
+<meta name="description" content="30개 보험사 상품을 비교 설계하는 지에이코리아 더존 스마트FC. 초기비용 없이 본업과 함께 시작하세요.">
+<!-- 카카오톡·문자·SNS 링크 미리보기 (주소는 반드시 https://로 시작하는 전체 주소) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="지에이코리아 더존 스마트FC">
+<meta property="og:title" content="보험 설계는 전문가에게, 수수료는 나에게">
+<meta property="og:description" content="30개 보험사 비교 설계 · 초기비용 0원 · 본업과 함께 시작하는 지에이코리아 더존 스마트FC">
+<meta property="og:url" content="https://dribble66.github.io/smartfc/">
+<meta property="og:image" content="https://dribble66.github.io/smartfc/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
 <style>
 /* Layout: 모바일 퍼스트 1단 랜딩. 흐름 = 제안(히어로) → 수익 구조 → 30개사 비교 → 틈새 시간 → 진행 단계 → 후기 → 지원서 → FAQ. 로고의 레드·블루를 브랜드 색으로 */
 /* Palette: 딥 네이비 + 샴페인 골드 한 가지 포인트. 로고 아이콘 색만 원색으로 남김 */
@@ -16,7 +27,7 @@
   --cta:#14243D; --cta-ink:#F4EBD8; --line:#DDE1E7; --danger:#B4233C;
   --gold:#A8854A; --hero-accent:#D9BF8C; --hero-cta-ink:#1A140A;
   --hero1:#0E1A2E; --hero2:#1C3352; --hero-ink:#F3F5F9;
-  --f-display:"Do Hyeon","Noto Sans KR",system-ui,sans-serif;
+  --f-display:"Noto Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;
   --f-body:"Noto Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;
   --r:20px;
 }
@@ -37,7 +48,7 @@
 html{scroll-behavior:smooth;overflow-x:clip}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.65;word-break:keep-all;padding-bottom:84px;margin:0}
-h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.25;text-wrap:balance;margin:0}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;letter-spacing:-.02em;line-height:1.3;text-wrap:balance;margin:0}
 p{margin:0}
 a{color:inherit}
 .wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
@@ -76,7 +87,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:co
 .hero::after{content:"";position:absolute;right:-160px;top:-160px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--hero-accent) 18%,transparent),transparent 70%)}
 .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;position:relative;z-index:1}
 .hero .kicker{font-size:18px;opacity:.9;margin-bottom:10px}
-.hero h1{font-size:clamp(38px,7.5vw,68px)}
+.hero h1{font-size:clamp(34px,6.4vw,58px);font-weight:900;line-height:1.25}
 .hero h1 em{font-style:normal;color:var(--hero-accent)}
 .hero .btn{background:var(--hero-accent);color:var(--hero-cta-ink);box-shadow:none}
 .hero p.lead{margin-top:18px;font-size:17px;opacity:.92;max-width:30em}
@@ -84,11 +95,11 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:co
 .hero .ghost{color:var(--hero-ink);font-weight:700;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.5);padding-bottom:2px}
 .stat-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:28px;padding:28px;backdrop-filter:blur(6px)}
 .stat-card .label{font-size:15px;opacity:.9}
-.stat-num{font-family:var(--f-display);font-size:clamp(72px,13vw,112px);line-height:1;font-variant-numeric:tabular-nums;margin-top:6px}
+.stat-num{font-family:var(--f-display);font-weight:900;letter-spacing:-.03em;font-size:clamp(72px,13vw,112px);line-height:1;font-variant-numeric:tabular-nums;margin-top:6px}
 .stat-num small{font-size:.36em;margin-left:6px}
 .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
 .stat-row div{background:rgba(255,255,255,.14);border-radius:14px;padding:12px 14px;font-size:14px}
-.stat-row b{display:block;font-family:var(--f-display);font-weight:400;font-size:24px}
+.stat-row b{display:block;font-family:var(--f-display);font-weight:700;font-size:22px}
 @media (max-width:820px){.hero-grid{grid-template-columns:1fr}}
 
 /* 수익 구조 flow */
@@ -111,7 +122,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:co
 .compare{display:grid;grid-template-columns:1fr 1.25fr;gap:18px;margin-top:36px;align-items:stretch}
 .opt{border-radius:28px;padding:28px;border:1px solid var(--line);background:var(--card);display:flex;flex-direction:column;gap:12px}
 .opt .k{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--muted)}
-.opt .big{font-family:var(--f-display);font-size:56px;line-height:1;font-variant-numeric:tabular-nums}
+.opt .big{font-family:var(--f-display);font-weight:900;letter-spacing:-.03em;font-size:56px;line-height:1;font-variant-numeric:tabular-nums}
 .opt .big small{font-size:.4em;margin-left:4px}
 .opt ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:4px}
 .opt.dim{opacity:.55}
@@ -136,7 +147,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:co
 /* daily */
 .day{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
 .slot{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
-.slot .when{font-family:var(--f-display);font-size:26px;margin:6px 0 8px}
+.slot .when{font-family:var(--f-display);font-weight:700;font-size:22px;margin:6px 0 8px}
 .slot p{color:var(--muted);font-size:15px}
 .clock{display:inline-block;font-variant-numeric:tabular-nums;font-size:13px;font-weight:700;background:var(--accent-soft);color:var(--accent);border-radius:8px;padding:2px 8px}
 @media (max-width:720px){.day{grid-template-columns:1fr}}
@@ -156,9 +167,9 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:co
 /* stories */
 .stories{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:32px;padding-bottom:12px;margin-inline:-20px;padding-inline:20px}
 .story{flex:0 0 min(320px,82%);scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:18px}
-.story q{font-family:var(--f-display);font-size:22px;line-height:1.4;quotes:none}
+.story q{font-family:var(--f-display);font-weight:500;font-size:19px;line-height:1.55;quotes:none}
 .who{display:flex;align-items:center;gap:12px;margin-top:auto}
-.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-size:18px;background:var(--accent-soft);color:var(--accent)}
+.avatar{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:16px;background:var(--accent-soft);color:var(--accent)}
 .who b{display:block;font-size:15px}
 .who span{font-size:13px;color:var(--muted)}
 
@@ -229,7 +240,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;font-size:13px;color:
     <div class="wrap hero-grid">
       <div>
         <p class="kicker">본업은 그대로, 초기비용 없이</p>
-        <h1>복잡한 보험은<br><em>전문가에게</em> 맡기고<br>수수료는 내 몫으로</h1>
+        <h1>보험 설계는<br><em>전문가에게</em>,<br>수수료는 나에게</h1>
         <p class="lead">주변에 보험 고민이 있는 분을 연결만 해 주세요. 어려운 설계와 상담은 지에이코리아 스마트FC 전문가가 맡고, 가입이 되면 보험 가입 수수료를 받아요.</p>
         <div class="actions">
           <a href="#apply" class="btn">지원서 쓰기</a>
