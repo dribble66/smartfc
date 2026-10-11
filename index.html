@@ -580,8 +580,12 @@ document.getElementById('applyForm').addEventListener('submit',async e=>{
   const els=[...document.querySelectorAll(sel)];
   const order=new Map();
   els.forEach(el=>{const p=el.parentElement;const n=order.get(p)||0;order.set(p,n+1);el.style.setProperty('--rd',Math.min(n,5)*90+'ms');el.classList.add('rv');});
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{rootMargin:'0px 0px -8% 0px'});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{rootMargin:'0px 0px -5% 0px'});
   els.forEach(el=>io.observe(el));
+  // 안전장치: 효과가 동작하지 않는 환경이나 페이지 끝에서도 모든 내용이 보이도록
+  const showAll=()=>els.forEach(el=>el.classList.add('in'));
+  addEventListener('scroll',()=>{if(innerHeight+scrollY>=document.documentElement.scrollHeight-80) showAll();},{passive:true});
+  setTimeout(()=>{if(!document.querySelector('.rv.in')) showAll();},2500);
   // 2) 수익 흐름 순차 점등
   const fw=document.querySelector('.flow-wrap');
   if(fw){const fo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){fw.classList.add('play');fo.disconnect();}}),{threshold:.35});fo.observe(fw);}
