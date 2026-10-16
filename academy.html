@@ -39,6 +39,22 @@
   --hero1:#0A1322; --hero2:#16263F; --hero-ink:#EEF1F6; color-scheme:dark}
 
 
+/* 아카데미 전용 색: 딥그린 + 골드 (네이버 카페로 이어지는 교육 공간) */
+:root{
+  --bg:#F4F7F5; --bg2:#E8F0EB; --line:#D8E3DC; --muted:#5A6B62;
+  --accent:#1F5C45; --accent-soft:#E0EEE6; --on-accent:#FFFFFF;
+  --cta:#174A37; --cta-ink:#F2ECD9;
+  --hero1:#0B231A; --hero2:#17473A;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0A1410; --bg2:#0F1C17; --card:#13241D; --line:#22392F; --muted:#9DB3A8;
+  --accent:#9ED8BD; --accent-soft:#183428; --on-accent:#0A1410;
+  --cta:#D4B47A; --cta-ink:#17120A; --hero1:#07150F; --hero2:#123A2D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0A1410; --bg2:#0F1C17; --card:#13241D; --line:#22392F; --muted:#9DB3A8;
+  --accent:#9ED8BD; --accent-soft:#183428; --on-accent:#0A1410;
+  --cta:#D4B47A; --cta-ink:#17120A; --hero1:#07150F; --hero2:#123A2D; color-scheme:dark}
+
 *{box-sizing:border-box}
 html{overflow-x:clip;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

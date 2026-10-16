@@ -39,6 +39,22 @@
   --hero1:#0A1322; --hero2:#16263F; --hero-ink:#EEF1F6; color-scheme:dark}
 
 
+/* 센터 개설 상담 전용 색: 와인 + 골드 (모집 페이지의 네이비와 구분) */
+:root{
+  --bg:#F8F5F6; --bg2:#F1EAED; --line:#E6DCE0; --muted:#6B5D63;
+  --accent:#7A2342; --accent-soft:#F4E4EA; --on-accent:#FFFFFF;
+  --cta:#5A1730; --cta-ink:#F7EBD6;
+  --hero1:#2A0C18; --hero2:#5E1A35;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#150B10; --bg2:#1D1016; --card:#25141C; --line:#3D2430; --muted:#B9A2AC;
+  --accent:#E7A9BF; --accent-soft:#3A1A27; --on-accent:#150B10;
+  --cta:#D4B47A; --cta-ink:#17120A; --hero1:#1C0811; --hero2:#46132A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#150B10; --bg2:#1D1016; --card:#25141C; --line:#3D2430; --muted:#B9A2AC;
+  --accent:#E7A9BF; --accent-soft:#3A1A27; --on-accent:#150B10;
+  --cta:#D4B47A; --cta-ink:#17120A; --hero1:#1C0811; --hero2:#46132A; color-scheme:dark}
+
 *{box-sizing:border-box}
 html{overflow-x:clip;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -233,7 +249,7 @@ footer{border-top:1px solid var(--line);padding-block:32px;font-size:13px;color:
       <h2 class="sec-title">스마트FC 네트워크</h2>
       <p class="sec-sub">창원본점을 중심으로 지점을 넓혀 가고 있어요.</p>
       <p class="plabel">운영 중</p>
-      <ul class="places"><li class="main">창원본점</li><li>진주지점</li><li>부산명지지점</li><li>고성지점</li></ul>
+      <ul class="places"><li class="main">창원본점</li><li>진주지점</li><li>부산명지지점</li><li>고성지점</li><li>울산지점</li></ul>
       <p class="plabel">개설 예정</p>
       <ul class="places soon"><li>통영</li><li>서울</li><li>인천</li><li>경기</li><li>고양</li></ul>
     </div>
